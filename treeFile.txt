@@ -1,0 +1,17 @@
+oem@oem-Inspiron-3542:~/getrude_styles$ mkdir jim_styles
+oem@oem-Inspiron-3542:~/getrude_styles$ cd jim_styles
+oem@oem-Inspiron-3542:~/getrude_styles/jim_styles$ mkdir -p bob_styles/karen_styles_grim/emma_syles-grim
+oem@oem-Inspiron-3542:~/getrude_styles/jim_styles$ cd ..
+oem@oem-Inspiron-3542:~/getrude_styles$ exa --tree
+.
+├── anyanka_styles
+│  └── john_smith
+│     └── jenny_smith
+├── bianca_grave
+│  └── lola_tul
+│     └── fernando_tul
+│        └── herve_tul
+└── jim_styles
+   └── bob_styles
+      └── karen_styles_grim
+         └── emma_syles-grim
