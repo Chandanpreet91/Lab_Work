@@ -1,0 +1,55 @@
+//keyboard shortcut to search through commands you've used previously
+    CTRL-R: Search the command history. Accept with ENTER/RETURN, abort with CTRL-G.
+    CTRL-P/UP: The previous command in history.
+    CTRL-N/DOWN: The next command in history.
+
+//command to exit your terminal and a keyboard shortcut that does the same.
+To close a terminal window you can use the exit command . 
+Alternatively you can use the shortcut ctrl+shift+w to close a terminal tab and 
+ctrl+shift+q to close the entire terminal including all tabs.
+
+//command to get the current date and time
+date 
+
+//command that displays the location or path of a command .In other words,it displays where the command is located
+on your computer
+
+ls or pwd
+
+//command that can display a sequence of arbitrarily chosen numbers
+seq 2 //1
+        2
+seq 1 5 
+// 1 2 3 4 5
+seq 2 4 6
+//2 6
+
+
+stretch
+//a command to copy text from any source to the clipboard
+Open a terminal and run:
+
+cat ~/Desktop/ded.html | pbcopy
+The file is now in your clipboard.
+To put it somewhere else (i.e. paste it) run:
+
+//a command to paste text from clipboard
+
+pbpaste > ~/Documents/ded.html
+Now you should have a copy of ded.html sitting in ~/Documents.
+
+//a command to replace text with other text
+
+sed -i 's/original/new/g' file.txt
+
+    sed = Stream EDitor
+    -i = in-place (i.e. save back to the original file)
+
+    The command string:
+        s = the substitute command
+        original = a regular expression describing the word to replace (or just the word itself)
+        new = the text to replace it with
+        g = global (i.e. replace all and not just the first occurrence)
+
+    file.txt = the file name
+
