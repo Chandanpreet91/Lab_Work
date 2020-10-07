@@ -1,0 +1,66 @@
+// command to list the number of command you have recently used
+1.history 
+2.history 12 //where 12 means how many commands you want to see
+3.history | grep command name //where command name can be such as rm, cd, grep etc.
+
+//command to delete a file you have created
+rm (remove) command is used to delete a file 
+syntax: rm fileName
+
+
+
+//command to delete a directory with the command you found in.
+while rmdir is used to delete a directory.
+rmdir directoryName
+
+//command to search for files or directories by their name.
+find command is used for finding a file or directory
+find fileName
+find directoryName
+
+//find a command to list all active running programs like your OS activity Monitor
+The ps (process statuses) command produces a snapshot of all running processes.
+ Therefore, unlike the Windows task manager, the results are static.
+
+When this command is used without any additional argument or option,
+ it will return a list of running processes along with four crucial columns:
+  the PID, terminal name (TTY), running time (TIME), and the name of the command 
+  that launches the process (CMD)
+
+
+Stretch
+
+//How to Download a File on Ubuntu Linux using the Command Line
+
+To save the file with the same name as the original source file on the remote server, 
+use –O (uppercase O) followed by curl as below:
+
+$ curl –O [URL]
+
+Download multiple files
+
+To download multiple files, enter the command in the following syntax:
+
+$ curl -O [URL1] -O [URL2]
+
+//command to search for text inside of files.
+grep
+
+In the first example, I will search for the user "tom" in the Linux passwd file. To search the /etc/passwd file for the user "tom", you need to enter the following command:
+
+grep tom /etc/passwd
+
+//How can you search files within directories recursively
+
+If you have a bunch of text files in a directory hierarchy, e.g, the Apache configuration files in /etc/apache2/ and you want to find the file where a specific text is defined, then use the -r option of the grep command to do a recursive search. This will perform a recursive search operation trough files for the string "197.167.2.9" (as shown below) in the directory /etc/apache2/ and all its sub-directories:
+
+grep -r "mydomain.com" /etc/apache2/
+
+Alternatively, the following command may be used:
+
+grep -R "mydomain.com" /etc/apache2/
+
+Given below are the Sample outputs for a similar search on an Nginx server:
+
+grep -r "mydomain.com" /etc/nginx/
+/etc/nginx/sites-available/mydomain.com.vhost:        if ($http_host != "www.mydomain.com") {
